@@ -17,7 +17,7 @@ class NewBall extends SpriteComponent
   Vector2 direction = Vector2(0, 0);
   Vector2 localTargetPosition = Vector2.zero();
   bool isSetLocalPosition = true;
-  double gravity = 0.5;
+  double gravity = 1;
 
   @override
   FutureOr<void> onLoad() async {

@@ -61,15 +61,15 @@ class NewBoard extends RectangleComponent with HasGameRef<MainGame> {
         spacer = 0;
       }
       var score = Random().nextInt(10) + 1;
-      var randomBall = Random().nextInt(6);
+      var randomBall = Random().nextInt(8);
       if (game.ballNumber >= 10) {
-        score = Random().nextInt(80) + 25;
-        randomBall = Random().nextInt(8);
+        score = Random().nextInt(80) + 30;
+        randomBall = Random().nextInt(15);
       } else if (game.ballNumber >= 5) {
-        score = Random().nextInt(50) + 15;
-        randomBall = Random().nextInt(6);
+        score = Random().nextInt(50) + 30;
+        randomBall = Random().nextInt(12);
       } else if (game.ballNumber >= 3) {
-        score = Random().nextInt(30) + 5;
+        score = Random().nextInt(30) + 10;
       }
 
       if (randomBall == 0) {
